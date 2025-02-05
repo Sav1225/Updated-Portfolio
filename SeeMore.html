@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <script src="https://kit.fontawesome.com/0085dcc1c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <!-- Loader -->
+     <div id="loader">
+        <div class="spinner"></div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class = "subtitle">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images/Milkteaa.png">
+                    <div class="layer">
+                        <h3>Ordering System For A Milkteashop</h3>
+                        <p>We created an application for the shop of 
+                            Ghie's Milkteashop using android studio and Java just like this one but updated with more features and a database
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Lana.png">
+                    <div class="layer">
+                        <h3>Ordering System For Lana's Sari Sari Store</h3>
+                        <p>We created a website that is used to order
+                            and contacting Lana's Sari Sari Store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                    <div class="work">  
+                    <img src="images/denver.png">
+                    <div class="layer">
+                        <h3>Created a Website for Mayor Denver Chua</h3>
+                        <p>I was thought how to create a website using WordPress in my work immersion at 
+                            the office of Mayor Denver Chua, They hosted me a template to put all Mayor's Accomplishment and projects</p>
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="index.html" class="btn">Go Back</a>
+        </div>
+    </div>
+    <script>
+        // Hide loader when page is fully loaded
+        window.addEventListener("load", function() {
+            const loader = document.getElementById("loader");
+            const content = document.getElementById("content");
+            loader.style.opacity = "0";
+            setTimeout(() => {
+                loader.style.display = "none";
+                content.style.display = "block";
+            }, 500);
+        });
+    </script>
+</body>
+</html>

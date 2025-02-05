@@ -1,0 +1,950 @@
+@Import Url("Https://Fonts.Googleapis.Com/Css2?Family=Poppins:ital,Wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&Display=Swap");
+
+*,
+*::After,
+*::Before {
+  Box-Sizing: Border-Box;
+  Padding: 0;
+  Margin: 0;
+}
+
+.Html {
+  Font-Size: 62.5%;
+}
+
+Body {
+  Font-Family: "Poppins", Sans-Serif;
+}
+body {
+  background-attachment: fixed;
+  background-position: 100% 100%;
+}
+.info {
+  text-justify: inter-word;
+  text-align: justify;
+}
+/* ///////////..Utility Classes../////////// */
+
+.Container {
+  Max-Width: 1200px;
+  Width: 90%;
+  Margin: Auto;
+}
+.logo {
+  height: 70px;
+  position: absolute;
+  left: 20px;
+}
+.Btn {
+  Display: Inline-Block;
+  Padding: 0.5em 1.5em;
+  Text-Decoration: None;
+  Border-Radius: 50px;
+  Cursor: Pointer;
+  Outline: None;
+  Margin-Top: 1em;
+  Text-Transform: Uppercase;
+  Font-Weight: Small;
+  font-size: 20px;
+  transition: 0.2s ease-out;
+  font-family: 'Century Gothic';
+}
+
+.Btn-Primary {
+  Color: #Fff;
+  Background: #1693d6;
+  
+}
+
+.Btn-Primary:hover {
+  Background: #0d81c0;
+  Transition: 0.1s Ease-In-Out;
+}
+.Btn-Primary:active {
+  transform: scale(0.9);
+}
+
+/* ............/Navbar/............ *
+
+/* Desktop Mode............/// */
+
+.Navbar Input[Type="Checkbox"],
+.Navbar .Hamburger-Lines {
+  Display: None;
+}
+.signin {
+  padding: 10px 20px;
+  margin-top: -52px;
+  margin-left: 510px;
+  border-radius: 40px;
+  border: none;
+  font-size: 15px;
+  font-family: 'Century Gothic';
+  color: white;
+  background-color: #1693d6;
+  transition: 0.2s ease-out;
+}
+.signin:active {
+  transform: scale(0.9);
+  background-color: #0e80bd;
+}
+.Navbar {
+  Box-Shadow: 0px 5px 10px 0px #Aaa;
+  Position: Fixed;
+  Width: 100%;
+  Background: #Fff;
+  Color: #000;
+  Opacity: 0.85;
+  Height: 80px;
+  Z-Index: 12;
+}
+
+.Navbar-Container {
+  Display: Flex;
+  Justify-Content: Space-Between;
+  Height: 85px;
+  Align-Items: Center;
+}
+
+.Menu-Items {
+  Order: 2;
+  Display: Flex;
+  font-family: 'Century Gothic';
+  margin-left: 20px;
+}
+.types {
+  font-family: 'Rockwell';
+  color: #000;
+}
+.Menu-Items Li {
+  List-Style: None;
+  Margin-Left: 1.5rem;
+  Margin-Bottom: 0.5rem;
+  Font-Size: 1.2rem;
+}
+
+.Menu-Items A {
+  Text-Decoration: None;
+  Color: rgb(0, 0, 0);
+  Font-Weight: 500;
+  Transition: Color 0.3s Ease-In-Out;
+}
+
+.Menu-Items A:hover {
+  Color: #3550c9;
+  Transition: Color 0.3s Ease-In-Out;
+}
+
+.Logo {
+    width: 80px;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    cursor: pointer;
+   Margin-Bottom: 0.5rem;
+}
+
+/* ............//// Showcase Styling ////......... */
+
+.Showcase-Area {
+  Height: 50vh;
+  Background: Linear-Gradient(
+      Rgba(240, 240, 240, 0.144),
+      Rgba(255, 255, 255, 0.336)
+    ),
+    Url("Https://I.Postimg.Cc/WT3TQS3V/Header-Image2.Jpg");
+  Background-Size: Cover;
+  Background-Position: Center;
+  Background-Repeat: No-Repeat;
+}
+
+.Showcase-Container {
+  Display: Flex;
+  Flex-Direction: Column;
+  Align-Items: Center;
+  Justify-Content: Center;
+  Height: 100%;
+  Font-Size: 1.6rem;
+  background-image: url(firebg.gif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.Main-Title {
+
+  Margin-Top: 70px;
+  font-family: 'Rockwell', serif;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 3px black;
+}
+.shef-hat {
+  width: 50px;
+  position: absolute;
+  top: 5px;
+  left: 35px;
+  transform: rotate(-40deg);
+}
+/* ......//About Us//...... */
+
+#About {
+  Padding: 50px 0;
+  Background: #F5f5f7;
+}
+
+.About-Wrapper {
+  Display: Flex;
+  Flex-Wrap: Wrap;
+}
+
+#About H2 {
+  Font-Size: 2.3rem;
+}
+
+#About P {
+  Font-Size: 1.2rem;
+  Color: #555;
+}
+
+#About .Small {
+  Font-Size: 1.2rem;
+  Color: #000000;
+  margin-top: -90px;
+  Font-Weight: 600;
+  font-family: 'Century Gothic';
+}
+.h2 {
+  font-family: 'Rockwell';
+  color: #eb0f0f;
+}
+.About-Img {
+  Flex: 1 1 400px;
+  Padding: 30px;
+  Transform: TranslateX(150%);
+  Animation: About-Img-Animation 1s Ease-In-Out Forwards;
+}
+
+@Keyframes About-Img-Animation {
+  100% {
+    Transform: Translate(0);
+  }
+}
+
+.About-Text {
+  Flex: 1 1 400px;
+  Padding: 30px;
+  Margin: Auto;
+  Transform: Translate(-150%);
+  Animation: About-Text-Animation 1s Ease-In-Out Forwards;
+}
+
+@Keyframes About-Text-Animation {
+  100% {
+    Transform: Translate(0);
+  }
+}
+
+.About-Img Img {
+  Display: Block;
+  Height: 400px;
+  Max-Width: 704px;
+  Margin: Auto;
+  Object-Fit: Cover;
+  Object-Position: Right;
+}
+
+/* ..........////Food Category///........... */
+
+#Food {
+  Padding: 5rem 0 10rem 0;
+}
+
+#Food H2 {
+  Text-Align: Center;
+  Font-Size: 2.5rem;
+  Font-Weight: 400;
+  Margin-Bottom: 40px;
+  Text-Transform: Uppercase;
+  Color: rgb(0, 0, 0);
+}
+
+.Food-Container {
+  Display: Flex;
+  Justify-Content: Space-Between;
+}
+
+.Food-Container Img {
+  Display: Block;
+  Width: 100%;
+  Margin: Auto;
+  Max-Height: 300px;
+  Object-Fit: Cover;
+  Object-Position: Center;
+}
+
+.Img-Container {
+  Margin: 0 1rem;
+  Position: Relative;
+}
+
+.Img-Content {
+  Position: Absolute;
+  Top: 70%;
+  Left: 50%;
+  Transform: Translate(-50%, -50%);
+  Opacity: 0;
+  Z-Index: 2;
+  Text-Align: Center;
+  Transition: All 0.3s Ease-In-Out 0.1s;
+}
+
+.Img-Content H3 {
+  Color: #Fff;
+  Font-Size: 2.2rem;
+}
+
+.Img-Content A {
+  Font-Size: 1.2rem;
+}
+
+.Img-Container::After {
+  Content: "";
+  Display: Block;
+  Position: Absolute;
+  Top: 0;
+  Left: 0;
+  Width: 100%;
+  Height: 100%;
+  Background: Rgba(0, 0, 0, 0.871);
+  Opacity: 0;
+  Z-Index: 1;
+
+  Transform: ScaleY(0);
+  Transform-Origin: 100% 100%;
+  Transition: All 0.3s Ease-In-Out;
+}
+
+.Img-Container:hover::After {
+  Opacity: 1;
+  Transform: ScaleY(1);
+}
+
+.Img-Container:hover .Img-Content {
+  Opacity: 1;
+  Top: 40%;
+}
+
+/* .........../Food Menu/............ */
+
+.Food-Menu-Heading {
+  Text-Align: Center;
+  Font-Size: 3.4rem;
+  Font-Weight: 400;
+  Color: rgb(0, 0, 0);
+  font-family: 'Rockwell';
+}
+
+.Food-Menu-Container {
+  Display: Flex;
+  Flex-Wrap: Wrap;
+  Padding: 50px 0px 30px 0px;
+}
+
+.Food-Menu-Container Img {
+  Display: Block;
+  Width: 250px;
+  Height: 250px;
+  Border-Radius: 50%;
+  Object-Fit: Cover;
+  Object-Position: Center;
+}
+
+.Food-Menu-Item {
+  Display: Flex;
+  Flex: 1 1 600px;
+  Justify-Content: Space-Evenly;
+  Margin-Bottom: 3rem;
+}
+
+.Food-Description {
+  Margin: Auto 1.5rem;
+}
+
+.Font-Title {
+  Font-Size: 1.8rem;
+  Font-Weight: 400;
+  Color: #444;
+  font-family: 'Century Gothic';
+}
+
+.Food-Description P {
+  Font-Size: 1.4rem;
+  font-family: 'Rockwell';
+  Color: #555;
+  Font-Weight: 500;
+}
+
+.Food-Description .Food-Price {
+  Color: #117964;
+  font-family: 'Century Gothic';
+  Font-Weight: 700;
+}
+
+/* ........./ Testimonial /.......... */
+
+#Testimonials {
+  Padding: 5rem 0;
+  Background: Rgba(243, 243, 243);
+}
+
+.Testimonial-Title {
+  Text-Align: Center;
+  Font-Size: 2.8rem;
+  Font-Weight: 400;
+  Color: #555;
+  font-family: 'Rockwell';
+}
+
+.Testimonial-Container {
+  Display: Flex;
+  Justify-Content: Space-Between;
+  Font-Size: 1.4rem;
+  padding-top: 1rem;
+}
+
+.Testimonial-Box .Checked {
+  Color: #Ff9529;
+}
+
+.Testimonial-Box .Testimonial-Text {
+  Margin: 1rem 0;
+  Color: #444;
+}
+
+.Testimonial-Box {
+  Text-Align: Center;
+  Padding: 1rem;
+}
+
+.Customer-Photo Img {
+  Display: Block;
+  Width: 150px;
+  Height: 150px;
+  Object-Fit: Cover;
+  Object-Position: Center;
+  Border-Radius: 50%;
+  Margin: Auto;
+}
+.Customer-Name {
+  font-family: 'Century Gothic';
+  font-weight: 300;
+}
+/* ........ Contact Us........... */
+
+#Contact {
+  Padding: 5rem 0;
+  
+  Background: Rgb(226, 226, 226);
+}
+.contact {
+  font-family: 'Century Gothic';
+  margin-left: 50px;
+
+}
+.Contact-Container {
+  Display: Flex;
+  Background: #Fff;
+}
+
+.Contact-Img {
+  Width: 50%;
+}
+
+.Contact-Img Img {
+  Display: Block;
+  Height: 400px;
+  Width: 100%;
+  Object-Position: Center;
+  margin-top: 25px;
+  margin-left: 20px;
+  Object-Fit: Cover;
+  border-radius: 20px;
+}
+
+.Form-Container {
+  padding-bottom: 30px;
+  padding-top: 35px;
+  
+  Width: 50%;
+  Margin: Auto;
+}
+ 
+.name {
+  Display: Block;
+  Width: 200px;
+  Border: None;
+  Border-Bottom: 1px Solid rgb(163, 162, 162);
+  margin-left: 20px;
+  Box-Shadow: None;
+  Outline: None;
+  Margin-Bottom: 1rem;
+  Color: #444;
+  Font-Weight: 500;
+  margin-left: 50px;
+  margin-top: -10px;
+  font-size: 15px;
+  padding-bottom: 5px;
+  transition: 0.2s ease-out;
+  font-family: 'Rockwell';
+  transition: 0.2s ease-out;
+  
+}
+.name:focus {
+  width: 300px;
+}
+.forname {
+  font-size: 12px;
+  margin-left: 20px;
+  margin-left: 50px;
+  Color: #444;
+  font-family: 'Century Gothic';
+}
+.email {
+  Display: Block;
+  Width: 200px;
+  Border: None;
+  Border-Bottom: 1px Solid rgb(163, 162, 162);
+  margin-left: 20px;
+  Box-Shadow: None;
+  Outline: None;
+  Margin-Bottom: 1rem;
+  Color: #444;
+  Font-Weight: 500;
+  margin-top: -10px;
+  font-size: 15px;
+  padding-bottom: 5px;
+  margin-left: 50px;
+  transition: 0.2s ease-out;
+  font-family: 'Rockwell';
+}
+.email:focus {
+  width: 300px;
+}
+.foremail {
+  font-size: 12px;
+  margin-left: 20px;
+  font-family: 'Century Gothic';
+  Color: #444;
+  margin-left: 50px;
+}
+.typeyour {
+  Display: Block;
+  Width: 400px;
+  Border: None;
+  Border-Bottom: 1px Solid rgb(131, 131, 131);
+  Color: #444;
+  Outline: None;
+  margin-left: 50px;
+  
+  Resize: None;
+  
+}
+.submitbtn {
+  padding: 10px 30px;
+  margin-left: 50px;
+  margin-top: 20px;
+  border-radius: 30px;
+  background-color: #1693d6;
+  color: white;
+  border: none;
+  font-family: 'Century Gothic';
+  font-size: 15px;
+  transition: 0.2s ease-out;
+}
+.submitbtn:active {
+  transform: scale(0.9);
+  background-color: #0e80bd;
+}
+.fortypeyour {
+  font-size: 12px;
+  margin-left: 50px;
+  font-family: 'Century Gothic';
+  Color: #444;
+  margin-bottom: 9px;
+}
+.Form-Container H2 {
+  Font-Size: 2.7rem;
+  Font-Weight: 500;
+  Color: #444;
+  Margin-Bottom: 1rem;
+  Margin-Top: -1.2rem;
+}
+
+
+.Form-Container A {
+  Font-Size: 1.3rem;
+}
+/* Footer */
+#Footer {
+  Padding: 2.6rem;
+  Color: #Fff;
+  Background: Rgb(65, 65, 65);
+}
+.footer-title {
+   font-size: 15px;
+   font-family: 'Century Gothic';
+   font-weight: lighter;
+}
+.fb-logo {
+  margin: left;
+}
+.fb-link {
+  color: white;
+  text-decoration: none;
+  font-family: 'Century Gothic';
+}
+.email-link {
+  color: white;
+  text-decoration: none;
+  font-family: 'Century Gothic';
+}
+.phone-link {
+  color: white;
+  text-decoration: none;
+  font-family:  'Century Gothic';
+}
+
+
+/* ......../ Media Query /.......... */
+
+@Media (Max-Width: 768px) {
+  .Navbar {
+    Opacity: 0.95;
+  }
+
+  .Navbar-Container Input[Type="Checkbox"],
+  .Navbar-Container .Hamburger-Lines {
+    Display: Block;
+  }
+
+  .Navbar-Container {
+    Display: Block;
+    Position: Relative;
+    Height: 64px;
+  }
+
+  .Navbar-Container Input[Type="Checkbox"] {
+    Position: Absolute;
+    Display: Block;
+    Height: 32px;
+    Width: 30px;
+    Top: 20px;
+    Left: 20px;
+    Z-Index: 5;
+    Opacity: 0;
+  }
+
+  .Navbar-Container .Hamburger-Lines {
+    Display: Block;
+    Height: 23px;
+    Width: 35px;
+    Position: Absolute;
+    Top: 17px;
+    Left: 20px;
+    Z-Index: 2;
+    Display: Flex;
+    Flex-Direction: Column;
+    Justify-Content: Space-Between;
+  }
+
+  .Navbar-Container .Hamburger-Lines .Line {
+    Display: Block;
+    Height: 4px;
+    Width: 100%;
+    Border-Radius: 10px;
+    Background: #333;
+  }
+
+  .Navbar-Container .Hamburger-Lines .Line1 {
+    Transform-Origin: 0% 0%;
+    Transition: Transform 0.4s Ease-In-Out;
+  }
+
+  .Navbar-Container .Hamburger-Lines .Line2 {
+    Transition: Transform 0.2s Ease-In-Out;
+  }
+
+  .Navbar-Container .Hamburger-Lines .Line3 {
+    Transform-Origin: 0% 100%;
+    Transition: Transform 0.4s Ease-In-Out;
+  }
+
+  .Navbar .Menu-Items {
+    Padding-Top: 100px;
+    Background: #Fff;
+    Height: 100vh;
+    Max-Width: 300px;
+    Transform: Translate(-150%);
+    Display: Flex;
+    Flex-Direction: Column;
+    Margin-Left: -40px;
+    Padding-Left: 50px;
+    Transition: Transform 0.5s Ease-In-Out;
+    Box-Shadow: 5px 0px 10px 0px #Aaa;
+  }
+
+  .Navbar .Menu-Items Li {
+    Margin-Bottom: 1.5rem;
+    Font-Size: 1.3rem;
+    Font-Weight: 500;
+  }
+
+  .Logo {
+    Position: Absolute;
+    Top: 5px;
+    Right: 15px;
+    Font-Size: 2rem;
+  }
+
+  .Navbar-Container Input[Type="Checkbox"]:Checked ~ .Menu-Items {
+    Transform: TranslateX(0);
+  }
+
+  .Navbar-Container Input[Type="Checkbox"]:Checked ~ .Hamburger-Lines .Line1 {
+    Transform: Rotate(35deg);
+  }
+
+  .Navbar-Container Input[Type="Checkbox"]:Checked ~ .Hamburger-Lines .Line2 {
+    Transform: ScaleY(0);
+  }
+
+  .Navbar-Container Input[Type="Checkbox"]:Checked ~ .Hamburger-Lines .Line3 {
+    Transform: Rotate(-35deg);
+  }
+
+  /* ......./ Food /......... */
+
+  .Food-Container {
+    Flex-Direction: Column;
+    Align-Items: Stretch;
+  }
+
+  .Food-Type:not(:Last-Child) {
+    Margin-Bottom: 3rem;
+  }
+
+  .Food-Type {
+    Box-Shadow: 5px 5px 10px 0 #Aaa;
+  }
+
+  .Img-Container {
+    Margin: 0;
+  }
+}
+
+@Media (Max-Width: 500px) {
+  Html {
+    Font-Size: 65%;
+  }
+
+  .Navbar .Menu-Items Li {
+    Font-Size: 1.6rem;
+  }
+
+  .Testimonial-Container {
+    Flex-Direction: Column;
+    Text-Align: Center;
+  }
+
+  .Food-Menu-Container Img {
+    Margin: Auto;
+  }
+
+  .Food-Menu-Item {
+    Flex-Direction: Column;
+    Text-Align: Center;
+  }
+
+  .Form-Container {
+    Width: 90%;
+  }
+
+  .Contact-Container {
+    Display: Flex;
+    Flex-Direction: Column;
+  }
+
+  .Contact-Img {
+    Width: 90%;
+    Margin: 3rem Auto;
+  }
+
+  .Logo {
+    Position: Absolute;
+    Top: 06px;
+    Right: 15px;
+    Font-Size: 3rem;
+  }
+
+  .Navbar .Menu-Items Li {
+    Margin-Bottom: 2.5rem;
+    Font-Size: 1.8rem;
+    Font-Weight: 500;
+  }
+}
+
+@Media (Min-Width: 769px) And (Max-Width: 1200px) {
+  .Img-Container H3 {
+    Font-Size: 1.5rem;
+  }
+
+  .Img-Container .Btn {
+    Font-Size: 0.7rem;
+  }
+}
+
+@Media (Orientation: Landscape) And (Max-Height: 500px) {
+  .Showcase-Area {
+    Height: 50vmax;
+  }
+}
+.sub {
+  font-family: 'Century Gothic', Serif;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 3px black;
+}
+/*slideshowcss
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.Abt-Img {
+  height: 360px;
+  width: 360px;
+  background-color: #000000;
+  border-radius: 0px;
+  position: absolute;
+  top: 95px;
+  left: 715px;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 4px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 00px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  .img-1{
+    border-radius: 40px ;
+  }
+  .img-2{
+    border-radius: 40px ;
+  }
+  .img-3{
+    border-radius: 40px ;
+  }
+  .period {
+    color: #1693d6;   
+}
+.prev1 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next1 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  margin-left:500px;
+}
